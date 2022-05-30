@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/bulma/css/bulma.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <script type="text/javascript" src="js/carrito.js"></script>
+    </head>
+    <title>Tienda Ficticia</title>
+<body>
+  <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        <img src="img/cart.jpeg" height="70px" width="70px"></img>Carrito
+      </a>
+  
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          <input type="button" onclick="vaciarCarro()" value="Vaciar carrito">
+        </a>
+        <a class="navbar-item">
+          <input type="button" onclick="pagar()" value="Ir a Pagar">
+        </a>
+        <a class="navbar-item">
+          <input type="button" onclick="verCarro()" value="Ver Carrito">
+        </a>
+      </div>
+    </div>
+  </nav>
+    <header><img src="img/TIENDITA.png"></header>
+    <section>
+        <span><a href="paginas/paginaCom.html">Dejanos tu comentario o valora nuestro servicio :)</a></span>
+    </section>
+    <hr>
+    <article>
+      <table border="2" >
+				<tr>
+					<td><center><figure class="image is-5by4">
+            <img src="img/tele.jpg">
+            </figure>
+            <p id="prod1">Televisor 44"</p><p id="precio1">350000</p>  <br>
+            <label for="Cantidad">Cantidad</label>
+            <select name="numero" id="cantidad1">
+            <option> 1
+            <option> 2
+            <option> 3
+            <option> 4   
+            </select><br>
+            <fieldset>
+              <legend></legend> 
+              <input class="btn" type="submit" onclick="agregarCarro1()" value="Agregar carrito" id="1">
+            </fieldset></center></td>
+            
+					<td><center><figure class="image is-5by4">
+            <img src="img/celu samsung.jpg">
+            </figure>
+            <p id="prod2">Celular samsung</p><p id="precio2">223000</p> <br>
+            <label for="Cantidad">Cantidad</label>
+            <select name="numero" id="cantidad2">
+            <option> 1
+            <option> 2
+            <option> 3
+            <option> 4   
+            </select><br>
+            <fieldset>
+              <legend></legend> 
+              <input class="btn" type="submit" onclick="agregarCarro2()" value="Agregar carrito" id="2">
+            </fieldset></center></td>
+          <td><center><figure class="image is-5by4">
+            <img src="img/celu xiaming.jpg">
+            </figure><br>
+            <p id="prod3">Celular Xiaoming</p><p id="precio3">185000</p>  <br>
+            <label for="Cantidad">Cantidad</label>
+            <select name="numero" id="cantidad3">
+            <option> 1
+            <option> 2
+            <option> 3
+            <option> 4   
+            </select><br>
+            <fieldset>
+              <legend></legend> 
+              <input class="btn" type="submit" onclick="agregarCarro3()" value="Agregar carrito" id="3">
+            </fieldset></center></td>
+            <td><center><figure class="image is-5by4">
+              <img src="img/impresora HP.jpg">
+              </figure><br>
+              <p id="prod4">Impresora HP </p><p id="precio4">125000</p> <br>
+              <label for="Cantidad">Cantidad</label>
+              <select name="numero" id="cantidad4">
+              <option> 1
+              <option> 2
+              <option> 3
+              <option> 4   
+              </select><br>
+              <fieldset>
+                <legend></legend> 
+                <input class="btn" type="submit" onclick="agregarCarro4()" value="Agregar carrito" id="4">
+              </fieldset></center></td>
+              <td><center><figure class="image is-5by4">
+                <img src="img/impresora canon.jfif">
+                </figure><br>
+                <p id="prod5">Impresora Canon </p><p id="precio5">99000</p><br>
+                <label for="Cantidad">Cantidad</label>
+                <select name="numero" id="cantidad5">
+                <option> 1
+                <option> 2
+                <option> 3
+                <option> 4   
+                </select><br>
+                <fieldset>
+                  <legend></legend> 
+                  <input class="btn" type="submit" onclick="agregarCarro5()" value="Agregar carrito" id="5">
+                </fieldset></center></td>
+				</tr>
+				<tr>
+					<td><center><figure class="image is-5by4">
+            <img src="img/audifonos.jpg">
+            </figure>
+            <p id="prod6">Audifonos BlTh</p><p id="precio6">18000</p><br>
+            <label for="Cantidad">Cantidad</label>
+            <select name="numero" id="cantidad6">
+            <option> 1
+            <option> 2
+            <option> 3
+            <option> 4   
+            </select><br>
+            <fieldset>
+              <legend></legend> 
+              <input class="btn" type="submit" onclick="agregarCarro6()" value="Agregar carrito" id="6">
+            </fieldset></center></td>
+            
+					<td><center><figure class="image is-5by4">
+            <img src="img/smartwatch.jpg">
+            </figure>
+            <p id="prod7">Reloj Smart</p><p id="precio7">76000</p> <br>
+            <label for="Cantidad">Cantidad</label>
+            <select name="numero" id="cantidad7">
+            <option> 1
+            <option> 2
+            <option> 3
+            <option> 4   
+            </select><br>
+            <fieldset>
+              <legend></legend> 
+              <input class="btn" type="submit" onclick="agregarCarro7()" value="Agregar carrito" id="7">
+            </fieldset></center></td>
+          <td><center><figure class="image is-5by4">
+            <img src="img/nintendo.jpg">
+            </figure><br>
+            <p id="prod8">Nintendo switch</p><p id="precio8">365000</p> <br>
+            <label for="Cantidad">Cantidad</label>
+            <select name="numero" id="cantidad8">
+            <option> 1
+            <option> 2
+            <option> 3
+            <option> 4   
+            </select><br>
+            <fieldset>
+              <legend></legend> 
+              <input class="btn" type="submit" onclick="agregarCarro8()" value="Agregar carrito" id="8">
+            </fieldset></center></td>
+            <td><center><figure class="image is-5by4">
+              <img src="img/camara.jpg">
+              </figure><br>
+              <p id="prod9">Camara Fotografica</p><p id="precio9">88500</p><br>
+              <label for="Cantidad">Cantidad</label>
+              <select name="numero" id="cantidad9">
+              <option> 1
+              <option> 2
+              <option> 3
+              <option> 4   
+              </select><br>
+              <fieldset>
+                <legend></legend> 
+                <input class="btn" type="submit" onclick="agregarCarro9()" value="Agregar carrito" id="9">
+              </fieldset></center></td>
+              <td><center><figure class="image is-5by4">
+                <img src="img/tablet.jpg">
+                </figure><br>
+                <p id="prod10">Tablet Ipad</p><p id="precio10">299000</p><br>
+                <label for="Cantidad">Cantidad</label>
+                <select name="numero" id="cantidad10">
+                <option> 1
+                <option> 2
+                <option> 3
+                <option> 4   
+                </select><br>
+                <fieldset>
+                  <legend></legend> 
+                  <input class="btn" type="submit" onclick="agregarCarro10()" value="Agregar carrito" id="10">
+                </fieldset></center></td>
+				</tr>
+				
+			</table>
+    
+    </article>
+  
+    <br>
+    <footer>
+        <nav class="pagination" role="navigation" aria-label="pagination">
+            <a class="pagination-previous">Anterior</a>
+            <a class="pagination-next" href="paginas/pagina2.html" >Siguiente</a>
+            <ul class="pagination-list">
+              <li>
+                <a class="pagination-link" aria-label="Goto page 1">1</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 1" href="paginas/pagina2.html">2</a>
+              </li>
+              <li>
+                <a class="pagination-link" aria-label="Goto page 1" href="paginas/pag3.html">3</a>
+              </li>
+            </ul>
+        </nav>
+    </footer>
+    <hr>
+
+</body>
+</html>

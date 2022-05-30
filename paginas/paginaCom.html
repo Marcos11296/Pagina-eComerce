@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/bulma/css/bulma.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <title>Tienda Ficticia</title>
+<body>
+    <header><a href="../paginaPrincipal.html"><img src="../img/TIENDITA.png"></a></header>
+    <center><section>
+        <span><a href="../paginaPrincipal.html">Vuelve a la Tiendita :)</a></span>
+    </section></center>
+    <hr>
+
+    <form class="elegante" action="contacto.php" method ="post">
+        <fieldset>
+          <legend> INGRESA TUS DATOS</legend> 
+          <table>
+            <tr>
+             <td><label for="Nombre">Nombre:</label></td>
+             <td><input type="text" size="30" name="nombre"></td> 
+            </tr>
+             <tr>
+             <td><label for="email">Email:</label></td>
+             <td><input type="email" size="30" name="email"></td> 
+            </tr>  	
+           </table>
+        </fieldset>
+        <fieldset>
+        <legend> Productos </legend>
+          <label for="opcion">Que tipo de productos has comprado:
+          <input type="checkbox" name="info1" value="Celular">celular 
+          <input type="checkbox" name="info2" value="televisor">Televisor 
+          <input type="checkbox" name="info3" value="Tablet">Tablet
+          <input type="checkbox" name="info4" value="Otro">Otro 
+         
+          <label for="pregunta1">¿Tu compra fue Satisfactoria?</label>
+          <input type="radio" name="intercasa" value="si">Sí
+          <input type="radio" name="intercasa" value="no">No
+         
+           <label for="pregunta2">¿En que rango evaluarias tu experiencia comprando en nuestra tienda?</label>
+           <select name="uso">
+           <option> Muy Satisfecho
+           <option> Satisfecho
+           <option> Poco Satisfecho
+           <option> Tuve problemas con mi compra   
+           </select>
+           <label> Califícanos:</label>
+            <input type="range" name="calificacion" min='0' max='10' value='0'/>
+           <label for="opinion">Por favor comentanos acerca de tu compra</label>
+           <textarea name="opinion" rows="5" cols="70"></textarea> 
+        </fieldset>
+        
+        <fieldset>
+          <legend> ACCIONES</legend> 
+          <input class="btn" type="submit" value="Enviar"/>
+          <input class="btn" type="reset" value="Borrar"/>
+        </fieldset>
+        </form>
+</body>
+</html>

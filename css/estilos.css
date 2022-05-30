@@ -1,0 +1,84 @@
+header
+{
+    text-align: center;
+    color: rgb(64, 22, 92);
+    text-shadow: 10px;
+    font-size: 100px;;
+    background-color: aquamarine;
+}
+
+hr
+{
+    padding:5px;
+    background-color: aqua;
+}
+
+
+article table
+{
+background-color:#dca1ee;
+color:white;
+margin: 0 auto;
+border-radius: 20px;
+padding:20px;
+box-shadow:0px 0px 20px rgb(0,0,0,1.5);	
+}
+
+article table tr td
+{   
+    width: 300;
+    height: 250;
+}
+
+section span
+{
+    cursor: pointer;
+    color: blueviolet;
+    text-align: center;
+    background-color: rgb(226, 238, 150);
+    border-radius:5px;
+}
+
+.titulo
+{
+	font-size:20px;
+	border-bottom:solid;
+	padding-bottom:10px;
+	border-width:1px;
+	border-color:#1d1d1d;
+	text-shadow: 0px 0px 20px rgba(0,0,0,1.5);
+	margin-left:120px;
+}
+
+.elegante
+{
+	border:1px solid #dca1ee;
+	border-radius:20px;
+	padding: 40px 40px 100px;
+	margin-top:25px;
+	background-color:#81ebe4;
+	box-shadow:0px 5px 10px #dca1ee, 0 0 0 10px #EEF5F7 inset;
+	margin-left:150px;
+}
+
+label
+{
+	display:block;
+	margin: .5em 0 0px 0;
+	font-weight:bold;
+}
+
+form fieldset
+{
+	width:70%
+}
+
+.btn{
+	border: 1px solid #dca1ee;
+	margin: 1em 0;
+	background-color:#64a7eb;
+	font-weight:bold;
+	text-shadow:1px 1px 0px rgb(252, 252, 252);
+	border-radius:8px;
+	cursor: pointer;
+}
